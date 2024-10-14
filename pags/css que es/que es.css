@@ -1,0 +1,36 @@
+.contenedor{
+    padding: 5px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 2fr    5fr   2fr;
+    grid-template-areas: "titulo    titulo      titulo"
+                          "menu     menu      menu "
+                          "contendido contenido  derecha"
+                          "contenido contenido  derecha"
+                          "final     final       final";
+}
+.contenedor .titulo{
+    padding: 1%;
+    background-color: red;
+    grid-area: titulo;
+}
+.contenedor .contenido{
+    padding: 1%;
+    background-color: rgb(155, 58, 58);
+    grid-area:contenido;
+}
+.contenedor .derecha{
+    padding: 1%;
+    background-color: rgb(164, 65, 136);
+    grid-area:derecha;
+}
+.contenedor .menu{
+    padding: 1%;
+    background-color: rgb(164, 65, 136);
+    grid-area:menu;
+}
+.contenedor .final{
+    padding: 1%;
+    background-color: rgb(164, 65, 136);
+    grid-area:final;
+}

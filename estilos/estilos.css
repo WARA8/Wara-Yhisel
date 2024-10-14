@@ -1,0 +1,41 @@
+.contenedor{
+    padding: 5px;
+    background-color: rgb(254, 60, 112);
+    display: grid;
+    grid-template-columns: 2fr    5fr   2fr;
+    grid-template-areas: "cabeza    cabeza    cabeza"
+                          "menu     menu      menu "
+                          "izquierda contenido  derecha"
+                          "izquierda contenido  derecha"
+                          "final     final       final";
+}
+.contenedor .cabeza{
+    padding: 1%;
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-sandia-fresca-esta-adornado-spa_670382-30720.jpg);
+    grid-area: cabeza;
+}
+.contenedor .contendio{
+    padding: 1%;
+    background-color: rgb(155, 58, 58);
+    grid-area:contenido;
+}
+.contenedor .derecha{
+    padding: 1%;
+    background-color: rgb(164, 65, 136);
+    grid-area:derecha;
+}
+.contenedor .izquierda{
+    padding: 1%;
+    background-color:rgb(254, 60, 112);
+    grid-area:izquierda;
+}
+.contenedor .menu{
+    padding: 1%;
+    background-color: rgb(252, 128, 172);
+    grid-area:menu;
+}
+.contenedor .final{
+    padding: 2%;
+    background-color: bisque;
+    grid-area:final;
+}
